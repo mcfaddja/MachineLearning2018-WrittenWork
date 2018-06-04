@@ -420,7 +420,15 @@ The basic CNN model improves the gender prediction from 0.59 to 0.66. The CNN mo
 
 Using Haar cascades improves the performance, as it removes a lot of bias from the dataset. The accuracy curves of a few of the experiments are given in \textbf{Figure } and 
 
+\begin{figure}
+\includegraphics[width=3.5in]{Picture1}
+\caption{Accuracy and Error curves for the final experiment with the CNN model (\emph{created from scratch}).}
+\end{figure}
 
+\begin{figure}
+\includegraphics[width=3.5in]{Picture2}
+\caption{Accuracy and Error curves for the final experiment with the CNN model (\emph{created from scratch}).}
+\end{figure}
 
 
 
@@ -437,12 +445,12 @@ When considering only the data visible to us, the performance of various machine
 	\begin{center}
 	\begin{tabular}{l | c | c | c | c | c | c | c}
   	\toprule
-							& Gender		& Age	& OPE	& NEU	& EXT	& AGR	& CON	\\
+							& Sex		& Age	& OPE	& NEU	& EXT	& AGR	& CON	\\
 		\textbf{Baseline}		& 0.59		& 0.56	& 0.65	& 0.80	& 0.79	& 0.66	& 0.73	\\
-		\textbf{Naive Bayes}		& 0.66		& 0.65	& 0.78	& 0.82	& 0.81	& 0.70	& 0.75	\\
-		\textbf{Random Forest}	& 0.75		& 0.61	& 0.62	& 0.81	& 0.77	& 0.65	& 0.70	\\
+		\textbf{N. Bayes}		& 0.66		& 0.65	& 0.78	& 0.82	& 0.81	& 0.70	& 0.75	\\
+		\textbf{Rand. For.}		& 0.75		& 0.61	& 0.62	& 0.81	& 0.77	& 0.65	& 0.70	\\
 		\textbf{AdaBoost}		& 0.61		& 0.73	& 0.70	& 0.75	& 0.80	& 0.70	& 0.74	\\
-		\textbf{Bagging IN}		& 0.73		& 0.62	& 0.65	& 0.80	& 0.77	& 0.64	& 0.65	\\
+		\textbf{Bag IN}			& 0.73		& 0.62	& 0.65	& 0.80	& 0.77	& 0.64	& 0.65	\\
 	\bottomrule
 	\end{tabular}
 	\end{center}
@@ -457,12 +465,12 @@ When considering only the data visible to us, the performance of various machine
 	\begin{center}
 	\begin{tabular}{l | c | c | c | c | c | c | c}
   	\toprule
-							& Gender		& Age	& OPE	& NEU	& EXT	& AGR	& CON	\\
+							& Sex		& Age	& OPE	& NEU	& EXT	& AGR	& CON	\\
 		\textbf{Baseline}		& 0.59		& 0.56	& 0.65	& 0.80	& 0.79	& 0.66	& 0.73	\\
-		\textbf{Bagging OUT}	& -			& -		& 0.60	& 0.79	& 0.77	& 0.67	& 0.68	\\
+		\textbf{Bag OUT}		& -			& -		& 0.60	& 0.79	& 0.77	& 0.67	& 0.68	\\
 		\textbf{SVM}			& 0.57		& 0.67	& 0.60	& 0.81	& 0.80	& 0.66	& 0.74	\\
-		\textbf{Linear SVM}		& 0.77		& 0.66	& -		& -		& -		& -		& -		\\
-		\textbf{Neural Network}	& 0.80		& 0.66	& $>$ 1	& $>$ 1	& $>$ 1	& $>$ 1	& $>$ 1	\\
+		\textbf{Lin. SVM}		& 0.77		& 0.66	& -		& -		& -		& -		& -		\\
+		\textbf{Neural Net}		& 0.80		& 0.66	& $>$ 1	& $>$ 1	& $>$ 1	& $>$ 1	& $>$ 1	\\
 	\bottomrule
 	\end{tabular}
 	\end{center}
