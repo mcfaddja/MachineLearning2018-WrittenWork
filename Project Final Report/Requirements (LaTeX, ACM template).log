@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 JUN 2018 22:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 JUN 2018 22:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1067,6 +1067,30 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
  [1.1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 46.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 46.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 7.0pt on input line 46.
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[][]\T1/LinuxLibertineT-TLF/b/n/7 Reference: \T1/LinuxLibertineT-TLF/m/n/7 (+20
+) https://blog.keras.io/building-powerful-image-classification-models-
+ []
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 7.3pt on input line 57.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 5.5pt on input line 57.
+
+Overfull \hbox (6.5218pt too wide) in paragraph at lines 53--64
+ [] 
+ []
+
+
+LaTeX Warning: Reference ` ' on page 2 undefined on input line 75.
+
 Package epstopdf Info: Source file: <cliffWANTEDa.eps>
 (epstopdf)                    date: 2018-06-03 20:56:34
 (epstopdf)                    size: 15525 bytes
@@ -1075,18 +1099,17 @@ Package epstopdf Info: Source file: <cliffWANTEDa.eps>
 (epstopdf)                    size: 4611 bytes
 (epstopdf)             Command: <repstopdf --outfile=cliffWANTEDa-eps-converted
 -to.pdf cliffWANTEDa.eps>
-(epstopdf)             \includegraphics on input line 48.
+(epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
-
-<cliffWANTEDa-eps-converted-to.pdf, id=97, 562.1pt x 421.575pt>
+<cliffWANTEDa-eps-converted-to.pdf, id=103, 562.1pt x 421.575pt>
 File: cliffWANTEDa-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cliffWANTEDa-eps-converted-to.pdf>
-Package pdftex.def Info: cliffWANTEDa-eps-converted-to.pdf used on input line 4
-8.
+Package pdftex.def Info: cliffWANTEDa-eps-converted-to.pdf used on input line 8
+7.
 (pdftex.def)             Requested size: 252.94499pt x 189.70699pt.
 
-Overfull \hbox (11.7975pt too wide) in paragraph at lines 48--49
+Overfull \hbox (11.7975pt too wide) in paragraph at lines 87--88
  [][] 
  []
 
@@ -1098,83 +1121,69 @@ Package epstopdf Info: Source file: <cliffGOT.eps>
 (epstopdf)                    size: 5213 bytes
 (epstopdf)             Command: <repstopdf --outfile=cliffGOT-eps-converted-to.
 pdf cliffGOT.eps>
-(epstopdf)             \includegraphics on input line 55.
+(epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
-<cliffGOT-eps-converted-to.pdf, id=98, 562.1pt x 421.575pt>
+<cliffGOT-eps-converted-to.pdf, id=104, 562.1pt x 421.575pt>
 File: cliffGOT-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cliffGOT-eps-converted-to.pdf>
-Package pdftex.def Info: cliffGOT-eps-converted-to.pdf used on input line 55.
+Package pdftex.def Info: cliffGOT-eps-converted-to.pdf used on input line 94.
 (pdftex.def)             Requested size: 252.94499pt x 189.70699pt.
 
-Overfull \hbox (11.7975pt too wide) in paragraph at lines 55--56
+Overfull \hbox (11.7975pt too wide) in paragraph at lines 94--95
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+[2.2 <./cliffWANTEDa-eps-converted-to.pdf> <./cliffGOT-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
-(Font)              scaled to size 9.0pt on input line 82.
+(Font)              scaled to size 9.0pt on input line 121.
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 98.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 98.
 
-Underfull \vbox (badness 1052) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
- [2.2 <./cliffWANTEDa-eps-converted-to.pdf> <./cliffGOT-eps-converted-to.pdf>]
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.3pt on input line 224.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 5.5pt on input line 224.
- [3.3])
+ []
+
+[3.3])
 No file "Requirements (LaTeX, ACM template)".bbl.
-[4.4
-
-]
+[4.4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
  (./Requirements (LaTeX, ACM template).aux)
@@ -1183,24 +1192,43 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `"Requirements (LaTeX, ACM template)".out' ha
 s not changed.
 (rerunfilecheck)             Checksum: 46E28F7A93F9CFA1A65045CE4D69B09D;1934.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 18079 strings out of 492995
- 276277 string characters out of 6132704
- 389376 words of memory out of 5000000
- 20870 multiletter control sequences out of 15000+600000
- 206866 words of font info for 310 fonts, out of 8000000 for 9000
+ 18110 strings out of 492995
+ 276935 string characters out of 6132704
+ 389436 words of memory out of 5000000
+ 20874 multiletter control sequences out of 15000+600000
+ 213788 words of font info for 323 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,17n,94p,1032b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
+ 60i,17n,94p,1032b,602s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{
-/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{
+/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/
 usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/u
 sr/local/texlive/2017/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/
 local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/l
@@ -1219,11 +1247,11 @@ nLibertineTB.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/liberti
 ne/LinLibertineTBI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/l
 ibertine/LinLibertineTI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
 lic/newtx/txsys.pfb>
-Output written on "Requirements (LaTeX, ACM template).pdf" (4 pages, 447670 byt
+Output written on "Requirements (LaTeX, ACM template).pdf" (4 pages, 458238 byt
 es).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 60583 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 222 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 61095 words of extra memory for PDF output out of 61914 (max. 10000000)
 

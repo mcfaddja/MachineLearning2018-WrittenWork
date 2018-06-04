@@ -33,7 +33,46 @@ For Five Big Personality, we have to used 82-LIWC features. Because of big data,
 
 \subsection{Images}
 
-jhljhv
+Convolutional Neural Networks was used to handle the image source of this experiment. CNN is a class of deep, feed forward ANN having applications in image/video processing, NLP etc. CNNs draw inspiration the animal vision cortex system. CNNs requires minimal preprocessing, i.e. the network learns the features as opposed to them being engineered. CNNs work by extracting features and recognizing patterns from the images, by convoluting the image with filters. 
+CNNs have proved to be a robust and low error approach for the image classification tasks. The overlap between Machine Learning and Computer Vision has seen many recent technological developments, particularly Deep Learning. CNNs with deeper/wider layers and larger training datasets tend to perform better. 
+
+In order to avoid over-fitting, data augmentation was performed on the image database. The augmentation operations included rescaling each pixel, flipping horizontally, rotating the image by variable degrees, randomly zooming into the image etc. 
+
+A series of experiments was conducted, with different CNN models, before and after performing any filtering operations through Haar cascades. Only gender prediction was implemented with images, since experiments with age prediction did not give good results. 
+
+%
+\subsubsection{Image Model-1: Basic CNN Model}
+
+Reference for this model was taken from the Keras blog\footnote{\textbf{Reference:} https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html}.  The model had an input size of 224x224 pixels, with 3 convolutional layers and and one fully connected layer. The optimizer used was ?adam? and the the evaluation metric was ?accuracy?.  This model is described in \textbf{Table \ref{tab:img-model1}}.
+
+\begin{table}
+\caption{IMAGE MODEL-1: Basic CNN Model}
+\label{tab:img-model1}
+\begin{minipage}{\columnwidth}
+	\begin{center}
+	\begin{tabular}{l | c | c | c | c | c}
+  	\toprule
+		\textbf{Layer}		& \textbf{Filters}		& \textbf{Neurons}	& \textbf{Fltr. Sz}	& \textbf{Act.}	& \textbf{Dropout}	\\
+		\hline
+		Conv	\footnote{Convolutional}	& 32					& -					& $3 \times 3$		& relu			& -				\\
+		Conv	\footnote{Convolutional}	& 32					& -					& $3 \times 3$		& relu			& -				\\
+		Conv	\footnote{Convolutional}	& 64					& -					& $3 \times 3$		& relu			& -				\\
+		Full-Con\footnote{Fully Connected}	& -					& 64					& -				& relu			& 0.5				\\
+		Output			& -					& 1					& -				& sigmoid			& -				\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+\bigskip
+\footnotesize
+  \emph{Note:} Fltr. Sz = Filter Size \\
+  \emph{Note:} Act. = Activation Function
+\end{minipage}
+\end{table}
+
+%
+\subsubsection{Image Model-2: RESNET50}
+
+Bottleneck features were extracted from the RESNET50 model. Final layer of the model was not included. The pre-trained weights were used to find the bottleneck values, i.e. features were extracted. Fully connected layers were added to run with the training data. This model is described in \textbf{Table \ref{ }}.
 
 
 %---------------------------------------------------
@@ -164,9 +203,14 @@ dadfsfa
 There are five filed in the training dataset. LIWC, profile, relation and test. For text and LIWC part, we use the text folder which contain 9500 text files, and we merge text files and a csv file named "profile.csv" because of common primary key "userid". Meanwhile, we merge the profile and the LIWC file as well. In the profile, we use 0 denote male, and 1 is female. In the age, we have classified the age likes "xx-24", "25-34", "35-69", and "50-xx". In order to more effective, the big five personality, Openness, Conscientiousness, Extroversion, Agreeableness, Emotional Stability, being referred to as "ope", "con", "ext", "agr" and "neu".
 
 
+%---------------------------------------------------
+
 \subsection{Likes}
 
+dfasdfasdf
 
+
+%---------------------------------------------------
 
 \subsection{Images}
 
@@ -179,7 +223,13 @@ Some of the issues noticed in the database were as follows:
 	\item Images did not contain face belonging to the label holder
 \end{itemize}
 
+The third issue mentioned above cannot be tackled, as the system lacks that intelligent ability. Operations can be implemented to filter the images with the first two issues mentioned above. OpenCV Haar Cascades were used as the filters. Haar cascades is a method used for object detection in images. There are specialized .xml files present, for detection of various objects. These files are created by a machine learning approach where a cascade function is trained from a lot of positive and negative images. 
+The cascade functions customized for face detection were used in this project, to filter images which had multiple faces or images which did not contain faces. The cascade functions used were for different views of a face, i.e. frontal and profile views. The images which passed through at least one cascade were retained. Manual selection was performed on the few residual images, to perform a final filtering operation. 
 
+%
+\subsubsection{Image Metrics}
+
+This project contains usage of various machine learning algorithms, which are either classification or regression. The evaluation metric of ?accuracy? was used for the classification models, and ?root mean squared error? for the regression models. 
 
 
 
