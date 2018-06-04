@@ -68,7 +68,7 @@ Against unseen test data, the results we obtained are given in \textbf{Table \re
 		Age		& 0.67			& 				& 				\\
 		Gender	& 0.83			& 				& 				\\
 		OPE		& 0.65			&  				& 				\\
-		EXT		& 0.79			&  				& 				\\
+		EXT		& 0.77			&  				& 				\\
 		CON		& 0.32			&  				& 				\\
 		NEU		& 0.80			&  				& 				\\
 		AGR		& 0.67			&  				& 				\\
@@ -299,6 +299,11 @@ Additionally, the one dataset common to all approaches was the profile data.  Th
 \begin{itemize}
 	\item Age (\emph{as a double all ending in $.0$})
 	\item Gender (\emph{with 0 for male and 1 for female, as a double all ending in $.0$})
+	\item	Openness (\emph{as a double on a scale from 1 to 5})
+	\item Extroversion (\emph{as a double on a scale from 1 to 5})
+	\item Conscientiousness (\emph{as a double on a scale from 1 to 5})
+	\item Neuroticism (\emph{as a double on a scale from 1 to 5})
+	\item Agreeableness (\emph{as a double on a scale from 1 to 5})
 \end{itemize}
 
 
@@ -311,7 +316,9 @@ There are five filed in the training dataset. LIWC, profile, relation and test. 
 
 \subsection{Likes}
 
-The initial likes dataset 
+The initial likes dataset contained one column with User IDs and one column with Like IDs, where the User IDs values were repeated several times to indicate all of the posts that a given user had liked.  Overall, the initial input file contained over 1.5 million different 'likes'.  To make the data easier for machine learning algorithms to process this initial data was converted into a sparse matrix with 9500 rows and 536204 columns, with each row representing a user and each column representing a liked item.  If an arbitrary user had liked any single item, then the element in the row for that user and the column for that liked item would have a 1 for its value.  Any items not liked by a user would have 0 as the value for the element in the row for that user and the column for that liked item.  This is why the sparse matrix was so useful.  There were only ~1.67 million likes in a matrix with 5,098,538,000 elements, so most ($0.03$ \%) of the matrix was empty (\emph{i.e. zero valued}).  Performing a dimensional reduction on this matrix using SVD or PCA would have been useful for reducing computation load and time, as well as opening up more complex machine learning algorithms; however, as discussed in the Likes subsection of the Methodology section (2.3), no good truncation point was found.
+
+Aside from the overall metrics discussed in the opening of this section we also employed entropy loss when examining the age and gender attributes.  Additionally, categorizing the personality scores by 0.1 (\emph{yielding 40 categories}) was considered but ultimately rejected as too inaccurate.  Finally, when considering the personality scores as continuous variables between 1 and 5 (\emph{inclusive}), we used \textbf{Mean-Sqared-Error} and the \textbf{$R^2$ coefficient} as additional metrics to examine model performance.
 
 
 %---------------------------------------------------
@@ -344,11 +351,7 @@ This project contains usage of various machine learning algorithms, which are ei
 
 \section{Results}
 
-Our overall results can be summarized by the table .
-
-% table here
-
-Detailed results for the three different classes of data are given in their own sections below.
+Our overall results can be summarized by the information in \textbf{Table \ref{intro:ownDATA}} and \textbf{Table \ref{intro:hideDATA}}, given above.  Detailed results for the three different classes of data are given in their own sections below.
 
 
 %---------------------------------------------------
@@ -406,22 +409,63 @@ For Big five personality, we only use linear regression on the text and LIWC par
 \end{minipage}
 \end{table}
 
-From the chart in \textbf{Table ref{tab:txt-person}}, we can clearly see that the results under the predict model are similar with Baseline when we use Linear regression.
+From the chart in \textbf{Table \ref{tab:txt-person}}, we can clearly see that the results under the predict model are similar with Baseline when we use Linear regression.
 
 
 %---------------------------------------------------
 
 \subsection{Images}
 
-jhlgjhg
+The basic CNN model improves the gender prediction from 0.59 to 0.66. The CNN model is trained from scratch. Further improvement was shown by cleaning the data and augmenting it, where images were filtered with Haar cascades, and augmentation was performed by internal libraries of Keras. Work with RESNET50 was attempted, however the status of the experiment is in progress.
+Using Haar cascades improves the performance, as it removes a lot of bias from the dataset. The accuracy curves of a few of the experiments is pasted below:
+
 
 
 %---------------------------------------------------
 
 \subsection{Likes}
 
-ljlkj
+When considering only the data visible to us, the performance of various machine learning algorithms and models on the Likes data is summarized in \textbf{Table \ref{tab:likesRESa}} and \textbf{Table \ref{tab:likesRESb}}.
 
+\begin{table}
+\caption{Text RESULTS for Personality Score RMSE}
+\label{tab:likesRESa}
+\begin{minipage}{\columnwidth}
+	\begin{center}
+	\begin{tabular}{l | c | c | c | c | c | c | c}
+  	\toprule
+							& Gender		& Age	& OPE	& NEU	& EXT	& AGR	& CON	\\
+		\textbf{Baseline}		& 0.59		& 0.56	& 0.65	& 0.80	& 0.79	& 0.66	& 0.73	\\
+		\textbf{Naive Bayes}		& 0.66		& 0.65	& 0.78	& 0.82	& 0.81	& 0.70	& 0.75	\\
+		\textbf{Random Forest}	& 0.75		& 0.61	& 0.62	& 0.81	& 0.77	& 0.65	& 0.70	\\
+		\textbf{AdaBoost}		& 0.61		& 0.73	& 0.70	& 0.75	& 0.80	& 0.70	& 0.74	\\
+		\textbf{Bagging IN}		& 0.73		& 0.62	& 0.65	& 0.80	& 0.77	& 0.64	& 0.65	\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+\bigskip
+\end{minipage}
+\end{table}
+
+\begin{table}
+\caption{Text RESULTS for Personality Score RMSE}
+\label{tab:likesRESb}
+\begin{minipage}{\columnwidth}
+	\begin{center}
+	\begin{tabular}{l | c | c | c | c | c | c | c}
+  	\toprule
+							& Gender		& Age	& OPE	& NEU	& EXT	& AGR	& CON	\\
+		\textbf{Baseline}		& 0.59		& 0.56	& 0.65	& 0.80	& 0.79	& 0.66	& 0.73	\\
+		\textbf{Bagging OUT}	& -			& -		& 0.60	& 0.79	& 0.77	& 0.67	& 0.68	\\
+		\textbf{SVM}			& 0.57		& 0.67	& 0.60	& 0.81	& 0.80	& 0.66	& 0.74	\\
+		\textbf{Linear SVM}		& 0.77		& 0.66	& -		& -		& -		& -		& -		\\
+		\textbf{Neural Network}	& 0.80		& 0.66	& $>$ 1	& $>$ 1	& $>$ 1	& $>$ 1	& $>$ 1	\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+\bigskip
+\end{minipage}
+\end{table}
 
 
 %---------------------------------------------------
@@ -442,14 +486,18 @@ For text part, we have tried many methods when we set up the model, but we do no
 
 \subsection{Images}
 
-jbklj
+Further work on Images includes experimenting with a few more pre-trained models, like Inception, VGG19 etc. Experiments towards age prediction with an extensive data cleaning are in the pipeline.
 
 
 %---------------------------------------------------
 
 \subsection{Likes}
 
-bljk
+For binary, single-class categorical data (\emph{Gender}), the chosen model performed above baseline and ultimately exceeded the baseline score considerably.  Similarly, the chosen model for binary, multi-class categorical data (\emph{Age Groups}), preformed above baseline; however, it did not out perform the baseline to the same extent as the model for the binary, single-class categorical data.  
+
+When considering the continuous data, model performance was disparate.  Some model performed above baseline (\emph{although not to the extent of either the gender or age models}), while others were at or barely above baseline.  Given this disparate performance, it is possible that the loss of accuracy from categorizing the personality attributes using a conversion to a categorical system using increments of 0.1 from 1 to 5 may not produce less accurate results than treating the variables as continuous.  
+
+For models of all attributes, recasting the models with a dimensional reduction my produce better results.  Examining the frequency counts of liked items may yield insight into a good truncation point.  After dimensional reduction, the resulting data should be run in models both before and after it has been scaled to some standard interval.  Furthermore, for models of the personality attributes, categorizing using increments of 0.1 or 0.05 from 1 to 5 should be considered, both with and without dimensional reduction.  We believe that the key to improving the quality of results from models relying on likes data lies in some sort of dimensional reduction.
 
 
 
