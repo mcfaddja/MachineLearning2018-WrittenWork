@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 JUN 2018 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 JUN 2018 21:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1066,12 +1066,8 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 44.
 
 
-Package caption Warning: \label without proper reference on input line 49.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:likes-cliffWANT' on page 1 undefined on input lin
-e 46.
+LaTeX Warning: Reference `likes-cliffWANT' on page 1 undefined on input line 46
+.
 
 Package epstopdf Info: Source file: <cliffWANTEDa.eps>
 (epstopdf)                    date: 2018-06-03 20:56:34
@@ -1083,7 +1079,7 @@ Package epstopdf Info: Source file: <cliffWANTEDa.eps>
 -to.pdf cliffWANTEDa.eps>
 (epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
-<cliffWANTEDa-eps-converted-to.pdf, id=71, 562.1pt x 421.575pt>
+<cliffWANTEDa-eps-converted-to.pdf, id=70, 562.1pt x 421.575pt>
 File: cliffWANTEDa-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cliffWANTEDa-eps-converted-to.pdf>
@@ -1116,7 +1112,7 @@ Package epstopdf Info: Source file: <cliffGOT.eps>
 pdf cliffGOT.eps>
 (epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
-<cliffGOT-eps-converted-to.pdf, id=88, 562.1pt x 421.575pt>
+<cliffGOT-eps-converted-to.pdf, id=87, 562.1pt x 421.575pt>
 File: cliffGOT-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cliffGOT-eps-converted-to.pdf>
@@ -1153,10 +1149,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 18033 strings out of 492995
- 275305 string characters out of 6132704
+ 18034 strings out of 492995
+ 275322 string characters out of 6132704
  382459 words of memory out of 5000000
- 20859 multiletter control sequences out of 15000+600000
+ 20860 multiletter control sequences out of 15000+600000
  192524 words of font info for 290 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,17n,94p,1014b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1181,11 +1177,11 @@ B.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinLiber
 tineT.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinL
 ibertineTB.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine
 /LinLibertineTI.pfb>
-Output written on "Requirements (LaTeX, ACM template).pdf" (3 pages, 361254 byt
+Output written on "Requirements (LaTeX, ACM template).pdf" (3 pages, 361190 byt
 es).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 164 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 500000)
  53903 words of extra memory for PDF output out of 61914 (max. 10000000)
 
