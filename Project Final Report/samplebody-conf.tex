@@ -1,8 +1,83 @@
 \section{Introduction}
 
-mnbmb
+With the explosion in data collection/production by social media sites and their associated accounts, it has become desirable to predict attributes of many users based an analysis of a small subset of users.  The goal of this project was to accomplish this in a small way by predicting a user?s
 
+\begin{itemize}
+	\item Age Group
+	\item Gender
+	\item	Scores on a 5-part personality test
+\end{itemize}
 
+The ages were grouped using the following ranges
+
+\begin{itemize}
+	\item 24 \& under
+	\item 25-34
+	\item 35-49
+	\item 50 \& over
+\end{itemize}
+
+The personality scores measured five components of a user?s personality. The users had their personality traits of
+
+\begin{itemize}
+	\item Openness (OPE)
+	\item Extraversion (EXT)
+	\item Conscientiousness (CON)
+	\item Neuroticism (NEU)
+	\item Agreeableness (AGR)
+\end{itemize}
+
+scored on a scale from 1 to 5, with a resolution to the hundredths place.
+
+The goals were to predict the described user attributes using models which performed better than a baseline model.  These models were compared using accuracy for the age and gender attributes and root mean squared error for the personality attributes.  Baseline scores to beat were 0.59 for both age \& gender, 0.65 for openness, 0.79 for extroversion,  0.80 for neuroticism, 0.73 for conscientiousness, and 0.66 for agreeableness.  Compared to these, we obtained the following results against our own test data are given in \textbf{Table \ref{intro:ownDATA}}.
+
+\begin{table}
+\caption{RESULTS Against Seen Data}
+\label{intro:ownDATA}
+\begin{minipage}{\columnwidth}
+	\begin{center}
+	\begin{tabular}{l | c | c | c }
+  	\toprule
+				& \textbf{Likes}		& \textbf{Images}	& \textbf{Text}		\\
+		\hline
+		Age		& 0.65			& 				& 				\\
+		Gender	& 0.81			& 				& 				\\
+		OPE		& 0.60			&  				& 				\\
+		EXT		& 0.78			&  				& 				\\
+		CON		& 0.65			&  				& 				\\
+		NEU		& 0.75			&  				& 				\\
+		AGR		& 0.64			&  				& 				\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+\bigskip
+\end{minipage}
+\end{table}
+
+Against unseen test data, the results we obtained are given in \textbf{Table \ref{intro:hideDATA}}.
+
+\begin{table}
+\caption{RESULTS Against Hidden Data}
+\label{intro:hideDATA}
+\begin{minipage}{\columnwidth}
+	\begin{center}
+	\begin{tabular}{l | c | c | c }
+  	\toprule
+				& \textbf{Likes}		& \textbf{Images}	& \textbf{Text}		\\
+		\hline
+		Age		& 0.67			& 				& 				\\
+		Gender	& 0.83			& 				& 				\\
+		OPE		& 0.65			&  				& 				\\
+		EXT		& 0.79			&  				& 				\\
+		CON		& 0.32			&  				& 				\\
+		NEU		& 0.80			&  				& 				\\
+		AGR		& 0.67			&  				& 				\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+\bigskip
+\end{minipage}
+\end{table}
 
 
 %---------------------------------------------------
@@ -43,7 +118,7 @@ A series of experiments was conducted, with different CNN models, before and aft
 %
 \subsubsection{Image Model-1: Basic CNN Model}
 
-Reference for this model was taken from the Keras blog\footnote{\textbf{Reference:} https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html}.  The model had an input size of 224x224 pixels, with 3 convolutional layers and and one fully connected layer. The optimizer used was ?adam? and the the evaluation metric was ?accuracy?.  This model is described in \textbf{Table \ref{tab:img-model1}}.
+Reference for this model was taken from the Keras blog\footnote{\textbf{Reference:} https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html}.  The model had an input size of 224x224 pixels, with 3 convolutional layers and and one fully connected layer. The optimizer used was 'adam' and the the evaluation metric was 'accuracy'.  This model is described in \textbf{Table \ref{tab:img-model1}}.
 
 \begin{table}
 \caption{IMAGE MODEL-1: Basic CNN Model}
@@ -229,7 +304,7 @@ The cascade functions customized for face detection were used in this project, t
 %
 \subsubsection{Image Metrics}
 
-This project contains usage of various machine learning algorithms, which are either classification or regression. The evaluation metric of ?accuracy? was used for the classification models, and ?root mean squared error? for the regression models. 
+This project contains usage of various machine learning algorithms, which are either classification or regression. The evaluation metric of 'accuracy' was used for the classification models, and 'root mean squared error' for the regression models. 
 
 
 
