@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 JUN 2018 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 JUN 2018 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1063,12 +1063,10 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 
 (./samplebody-conf.tex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 44.
+(Font)              scaled to size 9.0pt on input line 15.
+ [1.1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-
-LaTeX Warning: Reference `likes-cliffWANT' on page 1 undefined on input line 46
-.
-
+]
 Package epstopdf Info: Source file: <cliffWANTEDa.eps>
 (epstopdf)                    date: 2018-06-03 20:56:34
 (epstopdf)                    size: 15525 bytes
@@ -1077,26 +1075,20 @@ Package epstopdf Info: Source file: <cliffWANTEDa.eps>
 (epstopdf)                    size: 4611 bytes
 (epstopdf)             Command: <repstopdf --outfile=cliffWANTEDa-eps-converted
 -to.pdf cliffWANTEDa.eps>
-(epstopdf)             \includegraphics on input line 50.
+(epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
-<cliffWANTEDa-eps-converted-to.pdf, id=70, 562.1pt x 421.575pt>
+
+<cliffWANTEDa-eps-converted-to.pdf, id=97, 562.1pt x 421.575pt>
 File: cliffWANTEDa-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cliffWANTEDa-eps-converted-to.pdf>
-Package pdftex.def Info: cliffWANTEDa-eps-converted-to.pdf used on input line 5
-0.
+Package pdftex.def Info: cliffWANTEDa-eps-converted-to.pdf used on input line 4
+8.
 (pdftex.def)             Requested size: 252.94499pt x 189.70699pt.
 
-Overfull \hbox (11.7975pt too wide) in paragraph at lines 50--51
+Overfull \hbox (11.7975pt too wide) in paragraph at lines 48--49
  [][] 
  []
-
-[1.1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-
-LaTeX Warning: Reference `likes-cliffGOT' on page 2 undefined on input line 54.
-
 
 Package epstopdf Info: Source file: <cliffGOT.eps>
 (epstopdf)                    date: 2018-06-03 21:04:37
@@ -1106,28 +1098,81 @@ Package epstopdf Info: Source file: <cliffGOT.eps>
 (epstopdf)                    size: 5213 bytes
 (epstopdf)             Command: <repstopdf --outfile=cliffGOT-eps-converted-to.
 pdf cliffGOT.eps>
-(epstopdf)             \includegraphics on input line 58.
+(epstopdf)             \includegraphics on input line 55.
 Package epstopdf Info: Output file is already uptodate.
-<cliffGOT-eps-converted-to.pdf, id=86, 562.1pt x 421.575pt>
+<cliffGOT-eps-converted-to.pdf, id=98, 562.1pt x 421.575pt>
 File: cliffGOT-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cliffGOT-eps-converted-to.pdf>
-Package pdftex.def Info: cliffGOT-eps-converted-to.pdf used on input line 58.
+Package pdftex.def Info: cliffGOT-eps-converted-to.pdf used on input line 55.
 (pdftex.def)             Requested size: 252.94499pt x 189.70699pt.
 
-Overfull \hbox (11.7975pt too wide) in paragraph at lines 58--59
+Overfull \hbox (11.7975pt too wide) in paragraph at lines 55--56
  [][] 
  []
 
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.3pt on input line 108.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 5.5pt on input line 108.
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
+(Font)              scaled to size 9.0pt on input line 82.
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 173.
-[2.2 <./cliffWANTEDa-eps-converted-to.pdf> <./cliffGOT-eps-converted-to.pdf>])
+(Font)              scaled to size 9.0pt on input line 98.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 98.
+
+Underfull \vbox (badness 1052) has occurred while \output is active []
+
+ [2.2 <./cliffWANTEDa-eps-converted-to.pdf> <./cliffGOT-eps-converted-to.pdf>]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 7.3pt on input line 224.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 5.5pt on input line 224.
+ [3.3])
 No file "Requirements (LaTeX, ACM template)".bbl.
-[3.3
+[4.4
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
@@ -1137,50 +1182,48 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `"Requirements (LaTeX, ACM template)".out' ha
 s not changed.
-(rerunfilecheck)             Checksum: EBDE67BFA16CA6F525FE4903816C2B27;1616.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 46E28F7A93F9CFA1A65045CE4D69B09D;1934.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 18035 strings out of 492995
- 275338 string characters out of 6132704
- 382459 words of memory out of 5000000
- 20861 multiletter control sequences out of 15000+600000
- 192524 words of font info for 290 fonts, out of 8000000 for 9000
+ 18079 strings out of 492995
+ 276277 string characters out of 6132704
+ 389376 words of memory out of 5000000
+ 20870 multiletter control sequences out of 15000+600000
+ 206866 words of font info for 310 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,17n,94p,1014b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,17n,94p,1032b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/u
-sr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/us
-r/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr
-/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/
-local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/l
-ocal/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/lo
-cal/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/loc
-al/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_mmutss.enc}</usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinBiolinumT
-B.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinLiber
-tineT.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinL
-ibertineTB.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine
-/LinLibertineTI.pfb>
-Output written on "Requirements (LaTeX, ACM template).pdf" (3 pages, 361015 byt
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{
+/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/
+usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/u
+sr/local/texlive/2017/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/
+local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/l
+ocal/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/lo
+cal/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/loc
+al/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/loca
+l/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/local
+/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_mmutss.enc}</usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinBiolinu
+mTI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinLib
+ertineT.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/Li
+nLibertineTB.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/liberti
+ne/LinLibertineTBI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/l
+ibertine/LinLibertineTI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/newtx/txsys.pfb>
+Output written on "Requirements (LaTeX, ACM template).pdf" (4 pages, 447670 byt
 es).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 53903 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 60583 words of extra memory for PDF output out of 61914 (max. 10000000)
 
