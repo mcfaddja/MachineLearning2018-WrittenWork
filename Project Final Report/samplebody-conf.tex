@@ -147,7 +147,29 @@ Reference for this model was taken from the Keras blog\footnote{\textbf{Referenc
 %
 \subsubsection{Image Model-2: RESNET50}
 
-Bottleneck features were extracted from the RESNET50 model. Final layer of the model was not included. The pre-trained weights were used to find the bottleneck values, i.e. features were extracted. Fully connected layers were added to run with the training data. This model is described in \textbf{Table \ref{ }}.
+Bottleneck features were extracted from the RESNET50 model. Final layer of the model was not included. The pre-trained weights were used to find the bottleneck values, i.e. features were extracted. Fully connected layers were added to run with the training data. This model is described in \textbf{Table \ref{tab:img-model2}}.
+
+\begin{table}
+\caption{IMAGE MODEL-1: Basic CNN Model}
+\label{tab:img-model2}
+\begin{minipage}{\columnwidth}
+	\begin{center}
+	\begin{tabular}{l | c | c | c | c | c}
+  	\toprule
+		\textbf{Layer}					& \textbf{Filters}		& \textbf{Neurons}	& \textbf{Fltr. Sz}	& \textbf{Act.}	& \textbf{Dropout}	\\
+		\hline
+		Full-Con\footnote{Fully Connected}	& -					& 256			& -				& relu			& 0.5		\\
+		Output						& -					& 1				& -				& sigmoid			& -		\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+\bigskip
+\footnotesize
+  \emph{Note:} Fltr. Sz = Filter Size \\
+  \emph{Note:} Act. = Activation Function
+\end{minipage}
+\end{table}
+
 
 
 %---------------------------------------------------
@@ -270,7 +292,14 @@ We designed three types of neural networks for this part of the project.  The fi
 
 \section{Dataset and Metrics}
 
-dadfsfa
+Since the dataset was divided into three classes of data, we describe the datasets provided for each data class in its own, separate section below.  However, the metrics were similar for all classes of data.  The age and gender attributes were categorical, so we used the accuracy of their prediction as our metric for models predicting those attributes.  For the personality attributes, we used root-mean-squared-error as the metric for any model predicting those attributes. \\
+
+Additionally, the one dataset common to all approaches was the profile data.  That data had 9500 users and gave their
+
+\begin{itemize}
+	\item Age (\emph{as a double all ending in $.0$})
+	\item Gender (\emph{with 0 for male and 1 for female, as a double all ending in $.0$})
+\end{itemize}
 
 
 \subsection{Text}
@@ -282,7 +311,7 @@ There are five filed in the training dataset. LIWC, profile, relation and test. 
 
 \subsection{Likes}
 
-dfasdfasdf
+The initial likes dataset 
 
 
 %---------------------------------------------------
