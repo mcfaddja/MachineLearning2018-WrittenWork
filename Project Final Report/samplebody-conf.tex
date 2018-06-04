@@ -41,9 +41,23 @@ jhljhv
 
 \subsection{Likes}
 
-hglh
+When considering the Likes data, we first create a \textbf{User/LikeID Matrix} from the training data we are given.  This process is described below in the Dataset and Metrics section. Based on the training data we were given, this resulted in a matrix with 536204 columns.  Due to the large number of columns in this matrix, dimensionality reduction using Singular Value Decomposition or Principal Components Analysis was considered.  Unfortunately, when the singular values of this matrix were computed (\emph{up to the 9499th singular value}), there was no characteristic "cliff" drop-off in their magnitudes which would indicate a good point for truncation.  
 
+To illustrate this, the type of "cliff" in the singular value magnitudes we were seeking can be seen in \textbf{Figure \ref{fig:likes-cliffWANT}}.
 
+\begin{figure}
+\label{fig:likes-cliffWANT}
+\includegraphics[width=3.5in]{cliffWANTEDa}
+\caption{The type of 'cliff' drop-off in singular value magnitudes we wanted to see.}
+\end{figure}
+
+Unfortunately, the result was got did not have the sudden drop over just a few singular values.  What we got instead can be seen in \textbf{Figure \ref{fig:likes-cliffGOT}}.
+
+\begin{figure}
+\label{fig:likes-cliffGOT}
+\includegraphics[width=3.5in]{cliffGOT}
+\caption{The singular value magnitudes we got instead of what we wanted to see.}
+\end{figure}
 
 
 
