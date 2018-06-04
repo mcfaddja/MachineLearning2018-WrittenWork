@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JUN 2018 00:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JUN 2018 00:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1196,7 +1196,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--296
 Underfull \vbox (badness 1242) has occurred while \output is active []
 
  [4.4]
-<Picture1.png, id=161, 433.1382pt x 289.08pt>
+<Picture1.png, id=162, 433.1382pt x 289.08pt>
 File: Picture1.png Graphic file (type png)
  <use Picture1.png>
 Package pdftex.def Info: Picture1.png used on input line 424.
@@ -1206,7 +1206,7 @@ Overfull \hbox (11.7975pt too wide) in paragraph at lines 424--425
  [][] 
  []
 
-<Picture2.png, id=163, 433.1382pt x 289.08pt>
+<Picture2.png, id=164, 433.1382pt x 289.08pt>
 File: Picture2.png Graphic file (type png)
  <use Picture2.png>
 Package pdftex.def Info: Picture2.png used on input line 429.
@@ -1216,10 +1216,7 @@ Overfull \hbox (11.7975pt too wide) in paragraph at lines 429--430
  [][] 
  []
 
-
-Underfull \vbox (badness 1975) has occurred while \output is active []
-
- [5.5 <./Picture1.png>])
+[5.5 <./Picture1.png>])
 No file "Requirements (LaTeX, ACM template)".bbl.
 [6.6 <./Picture2.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
@@ -1233,10 +1230,10 @@ s not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 18167 strings out of 492995
- 278004 string characters out of 6132704
- 388751 words of memory out of 5000000
- 20886 multiletter control sequences out of 15000+600000
+ 18169 strings out of 492995
+ 278039 string characters out of 6132704
+ 388822 words of memory out of 5000000
+ 20887 multiletter control sequences out of 15000+600000
  219333 words of font info for 348 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,17n,94p,1416b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1286,11 +1283,11 @@ TBI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinLib
 ertineTI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfonts/rtx
 mi.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/txsys.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on "Requirements (LaTeX, ACM template).pdf" (6 pages, 661832 byt
+Output written on "Requirements (LaTeX, ACM template).pdf" (6 pages, 662582 byt
 es).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
  61105 words of extra memory for PDF output out of 61914 (max. 10000000)
 

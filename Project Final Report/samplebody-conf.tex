@@ -40,13 +40,13 @@ The goals were to predict the described user attributes using models which perfo
   	\toprule
 				& \textbf{Likes}		& \textbf{Images}	& \textbf{Text}		\\
 		\hline
-		Age		& 0.65			& 				& 				\\
-		Gender	& 0.81			& 				& 				\\
-		OPE		& 0.60			&  				& 				\\
-		EXT		& 0.78			&  				& 				\\
-		CON		& 0.65			&  				& 				\\
-		NEU		& 0.75			&  				& 				\\
-		AGR		& 0.64			&  				& 				\\
+		Age		& 0.65			& -				& -				\\
+		Gender	& 0.81			& 0.73			& -				\\
+		OPE		& 0.60			&  -				& -				\\
+		EXT		& 0.78			&  -				& -				\\
+		CON		& 0.65			&  -				& -				\\
+		NEU		& 0.75			&  -				& -				\\
+		AGR		& 0.64			&  -				& -				\\
 	\bottomrule
 	\end{tabular}
 	\end{center}
@@ -65,13 +65,13 @@ Against unseen test data, the results we obtained are given in \textbf{Table \re
   	\toprule
 				& \textbf{Likes}		& \textbf{Images}	& \textbf{Text}		\\
 		\hline
-		Age		& 0.67			& 				& 				\\
-		Gender	& 0.83			& 				& 				\\
-		OPE		& 0.65			&  				& 				\\
-		EXT		& 0.77			&  				& 				\\
-		CON		& 0.32			&  				& 				\\
-		NEU		& 0.80			&  				& 				\\
-		AGR		& 0.67			&  				& 				\\
+		Age		& 0.67			& -				& 0.61			\\
+		Gender	& 0.83			& 0.73			& 0.71			\\
+		OPE		& -				&  -				& 0.65			\\
+		EXT		& -				&  -				& 0.79			\\
+		CON		& -				&  -				& 0.79			\\
+		NEU		& -				&  -				& 0.65			\\
+		AGR		& -				&  -				& 0.72			\\
 	\bottomrule
 	\end{tabular}
 	\end{center}
@@ -199,7 +199,7 @@ Thus, we proceeded to use the entirety of the column space of the \textbf{User/L
 	\item AdaBoost
 	\item Bagging (\emph{with in-bag scoring})
 	\item Bagging (\emph{with out-of-bag scoring})
-	\item Naive Bayes
+	\item Naive Bayes (\emph{Bernoulli})
 	\item	K-Nearest Neighbor
 	\item	Support Vector Machine
 	\item Linear Support Vector Machine
@@ -418,7 +418,7 @@ From the chart in \textbf{Table \ref{tab:txt-person}}, we can clearly see that t
 
 The basic CNN model improves the gender prediction from 0.59 to 0.66. The CNN model is trained from scratch. Further improvement was shown by cleaning the data and augmenting it, where images were filtered with Haar cascades, and augmentation was performed by internal libraries of Keras. Work with RESNET50 was attempted, however the status of the experiment is in progress.
 
-Using Haar cascades improves the performance, as it removes a lot of bias from the dataset. The accuracy curves of a few of the experiments are given in \textbf{Figure } and 
+Using Haar cascades improves the performance, as it removes a lot of bias from the dataset. The accuracy curves of a few of the experiments are given in \textbf{Figure 3} and \textbf{Figure 4}.  Additionally, the results of several models predictions for gender are given in \textbf{Table \ref{tab:img-genderRES}}.
 
 \begin{figure}
 \includegraphics[width=3.5in]{Picture1}
@@ -430,6 +430,23 @@ Using Haar cascades improves the performance, as it removes a lot of bias from t
 \caption{Error/Loss curve for the final experiment with the CNN model (\emph{created from scratch}).}
 \end{figure}
 
+\begin{table}
+\caption{Text RESULTS for Personality Score RMSE}
+\label{tab:img-genderRES}
+\begin{minipage}{\columnwidth}
+	\begin{center}
+	\begin{tabular}{l | l}
+  	\toprule
+		\textbf{Model}							& \textbf{Accuracy}		\\
+		Baseline								& 0.59				\\
+		Basic CNN Model						& 0.66				\\
+		Basic CNN Model with Data Cleaning		& 0.73				\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+\bigskip
+\end{minipage}
+\end{table}
 
 
 %---------------------------------------------------
