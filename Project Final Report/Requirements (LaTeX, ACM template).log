@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JUN 2018 00:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JUN 2018 02:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1056,12 +1056,22 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 120.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 120.
+
+
+LaTeX Warning: Reference `TotPages' on page 1 undefined on input line 120.
+
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 120.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 120.
-
 (./samplebody-conf.tex
+
+LaTeX Warning: Reference `intro:ownDATA' on page 1 undefined on input line 32.
+
+
+LaTeX Warning: Reference `intro:hideDATA' on page 1 undefined on input line 57.
+
+
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 90.
 
@@ -1082,6 +1092,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
 ) https://blog.keras.io/building-powerful-image-classification-models-
  []
 
+
+LaTeX Warning: Reference `tab:img-model1' on page 2 undefined on input line 121
+.
+
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 7.3pt on input line 132.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
@@ -1092,11 +1106,24 @@ Overfull \hbox (6.5218pt too wide) in paragraph at lines 128--139
  []
 
 
+LaTeX Warning: Reference `tab:img-model2' on page 2 undefined on input line 150
+.
+
+
 Overfull \hbox (6.4999pt too wide) in paragraph at lines 157--165
  [] 
  []
 
 [2.2]
+
+LaTeX Warning: Reference `tab:img-model2' on page 3 undefined on input line 176
+.
+
+
+Overfull \hbox (6.7408pt too wide) in paragraph at lines 183--198
+ [] 
+ []
+
 Package epstopdf Info: Source file: <cliffWANTEDa.eps>
 (epstopdf)                    date: 2018-06-03 20:56:34
 (epstopdf)                    size: 15525 bytes
@@ -1105,17 +1132,17 @@ Package epstopdf Info: Source file: <cliffWANTEDa.eps>
 (epstopdf)                    size: 4611 bytes
 (epstopdf)             Command: <repstopdf --outfile=cliffWANTEDa-eps-converted
 -to.pdf cliffWANTEDa.eps>
-(epstopdf)             \includegraphics on input line 184.
+(epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
- <cliffWANTEDa-eps-converted-to.pdf, id=124, 562.1pt x 421.575pt>
+<cliffWANTEDa-eps-converted-to.pdf, id=59, 562.1pt x 421.575pt>
 File: cliffWANTEDa-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cliffWANTEDa-eps-converted-to.pdf>
-Package pdftex.def Info: cliffWANTEDa-eps-converted-to.pdf used on input line 1
-84.
+Package pdftex.def Info: cliffWANTEDa-eps-converted-to.pdf used on input line 2
+17.
 (pdftex.def)             Requested size: 252.94499pt x 189.70699pt.
 
-Overfull \hbox (11.7975pt too wide) in paragraph at lines 184--185
+Overfull \hbox (11.7975pt too wide) in paragraph at lines 217--218
  [][] 
  []
 
@@ -1127,118 +1154,196 @@ Package epstopdf Info: Source file: <cliffGOT.eps>
 (epstopdf)                    size: 5213 bytes
 (epstopdf)             Command: <repstopdf --outfile=cliffGOT-eps-converted-to.
 pdf cliffGOT.eps>
-(epstopdf)             \includegraphics on input line 191.
+(epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
-<cliffGOT-eps-converted-to.pdf, id=125, 562.1pt x 421.575pt>
+<cliffGOT-eps-converted-to.pdf, id=60, 562.1pt x 421.575pt>
 File: cliffGOT-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cliffGOT-eps-converted-to.pdf>
-Package pdftex.def Info: cliffGOT-eps-converted-to.pdf used on input line 191.
+Package pdftex.def Info: cliffGOT-eps-converted-to.pdf used on input line 224.
 (pdftex.def)             Requested size: 252.94499pt x 189.70699pt.
 
-Overfull \hbox (11.7975pt too wide) in paragraph at lines 191--192
+Overfull \hbox (11.7975pt too wide) in paragraph at lines 224--225
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+[3.3 <./cliffWANTEDa-eps-converted-to.pdf> <./cliffGOT-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
-(Font)              scaled to size 9.0pt on input line 218.
+(Font)              scaled to size 9.0pt on input line 251.
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
-
- []
-
-[3.3 <./cliffWANTEDa-eps-converted-to.pdf> <./cliffGOT-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Underfull \vbox (badness 1242) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
- [4.4]
-<Picture1.png, id=162, 433.1382pt x 289.08pt>
+ []
+
+
+LaTeX Warning: Reference `tab:like-nnets' on page 4 undefined on input line 267
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+[4.4]
+
+LaTeX Warning: Reference `intro:ownDATA' on page 5 undefined on input line 396.
+
+
+
+LaTeX Warning: Reference `intro:hideDATA' on page 5 undefined on input line 396
+.
+
+
+LaTeX Warning: Reference `tab:txt-ageSEX' on page 5 undefined on input line 403
+.
+
+
+LaTeX Warning: Reference `tab:txt-ageSEX' on page 5 undefined on input line 432
+.
+
+
+LaTeX Warning: Reference `tab:txt-person' on page 5 undefined on input line 434
+.
+
+
+LaTeX Warning: Reference `tab:txt-person' on page 5 undefined on input line 454
+.
+
+[5.5]
+
+LaTeX Warning: Reference `tab:img-genderRES' on page 6 undefined on input line 
+463.
+
+<Picture1.png, id=116, 433.1382pt x 289.08pt>
 File: Picture1.png Graphic file (type png)
  <use Picture1.png>
-Package pdftex.def Info: Picture1.png used on input line 424.
+Package pdftex.def Info: Picture1.png used on input line 466.
 (pdftex.def)             Requested size: 252.94499pt x 168.82219pt.
 
-Overfull \hbox (11.7975pt too wide) in paragraph at lines 424--425
+Overfull \hbox (11.7975pt too wide) in paragraph at lines 466--467
  [][] 
  []
 
-<Picture2.png, id=164, 433.1382pt x 289.08pt>
+<Picture2.png, id=118, 433.1382pt x 289.08pt>
 File: Picture2.png Graphic file (type png)
  <use Picture2.png>
-Package pdftex.def Info: Picture2.png used on input line 429.
+Package pdftex.def Info: Picture2.png used on input line 471.
 (pdftex.def)             Requested size: 252.94499pt x 168.82219pt.
 
-Overfull \hbox (11.7975pt too wide) in paragraph at lines 429--430
+Overfull \hbox (11.7975pt too wide) in paragraph at lines 471--472
  [][] 
  []
 
-[5.5 <./Picture1.png>])
+
+LaTeX Warning: Reference `tab:likesRESa' on page 6 undefined on input line 498.
+
+
+
+LaTeX Warning: Reference `tab:likesRESb' on page 6 undefined on input line 498.
+
+
+[6.6 <./Picture1.png> <./Picture2.png>])
 No file "Requirements (LaTeX, ACM template)".bbl.
-[6.6 <./Picture2.png>]
+[7.7
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
  (./Requirements (LaTeX, ACM template).aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
-Package rerunfilecheck Info: File `"Requirements (LaTeX, ACM template)".out' ha
-s not changed.
-(rerunfilecheck)             Checksum: 46E28F7A93F9CFA1A65045CE4D69B09D;1934.
+
+
+Package rerunfilecheck Warning: File `"Requirements (LaTeX, ACM template)".out'
+ has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Requirements (LaTeX, ACM template)
+".out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  46E28F7A93F9CFA1A65045CE4D69B09D;1934.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 18169 strings out of 492995
- 278039 string characters out of 6132704
- 388822 words of memory out of 5000000
- 20887 multiletter control sequences out of 15000+600000
+ 18162 strings out of 492995
+ 277930 string characters out of 6132704
+ 390063 words of memory out of 5000000
+ 20869 multiletter control sequences out of 15000+600000
  219333 words of font info for 348 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,17n,94p,1416b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
 , replaced by a fixed one
@@ -1283,11 +1388,11 @@ TBI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinLib
 ertineTI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfonts/rtx
 mi.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/txsys.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on "Requirements (LaTeX, ACM template).pdf" (6 pages, 662582 byt
+Output written on "Requirements (LaTeX, ACM template).pdf" (7 pages, 664667 byt
 es).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 61105 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 60961 words of extra memory for PDF output out of 61914 (max. 10000000)
 

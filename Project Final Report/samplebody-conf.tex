@@ -170,6 +170,39 @@ Bottleneck features were extracted from the RESNET50 model. Final layer of the m
 \end{minipage}
 \end{table}
 
+%
+\subsubsection{Image Model-3: A bit advanced CNN model from scratch}
+
+The model has 5 convolutional layers, 3 fully connected and 1 output layer. Optimizer used was 'adam' and the evaluation metric was 'accuracy'.  This model is described in \textbf{Table \ref{tab:img-model2}}.
+
+\begin{table}
+\caption{IMAGE MODEL-1: Basic CNN Model}
+\label{tab:img-model3}
+\begin{minipage}{\columnwidth}
+	\begin{center}
+	\begin{tabular}{l | c | c | c | c | c}
+  	\toprule
+		\textbf{Layer}		& \textbf{Filters}		& \textbf{Neurons}	& \textbf{Fltr. Sz}	& \textbf{Act.}	& \textbf{Dropout}	\\
+		\hline
+		Conv	\footnote{Convolutional}	& 32					& -					& $3 \times 3$		& relu			& -				\\
+		Conv	\footnote{Convolutional}	& 32					& -					& $3 \times 3$		& relu			& -				\\
+		Conv	\footnote{Convolutional}	& 64					& -					& $3 \times 3$		& relu			& -				\\
+		Conv	\footnote{Convolutional}	& 64					& -					& $3 \times 3$		& relu			& -				\\
+		Conv	\footnote{Convolutional}	& 64					& -					& $3 \times 3$		& relu			& -				\\
+		Full-Con\footnote{Fully Connected}	& -					& 256				& -				& relu			& -				\\
+		Full-Con\footnote{Fully Connected}	& -					& 128				& -				& relu			& -				\\
+		Full-Con\footnote{Fully Connected}	& -					& 32					& -				& relu			& 0.5				\\
+		Output			& -					& 1					& -				& sigmoid			& -				\\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+\bigskip
+\footnotesize
+  \emph{Note:} Fltr. Sz = Filter Size \\
+  \emph{Note:} Act. = Activation Function
+\end{minipage}
+\end{table}
+
 
 
 %---------------------------------------------------
@@ -283,6 +316,15 @@ We designed three types of neural networks for this part of the project.  The fi
 \end{minipage}	
 \end{table}
 
+Additionally, the following loss functions were used
+
+\begin{itemize}
+	\item For \textbf{Age}: categorical\_crossentropy
+	\item For \textbf{Gender}: binary\_crossentropy
+	\item For \textbf{Personality Scores}: MSE (\emph{mean-sqaure-error})
+\end{itemize}
+
+Finally, it should be noted that all neural nets used the 'adam' optimizer
 
 
 %---------------------------------------------------
